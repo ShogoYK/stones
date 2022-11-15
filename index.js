@@ -62,3 +62,19 @@ function showChords(toneSelected){
     document.getElementById('setima1').innerText =  toneSelected.setima   
     
 } 
+
+function clearInputs(){
+    let text = document.getElementById('songInput');
+    let selector = document.getElementById('toneSelector');
+
+    document.getElementById('base1').innerText = '';
+    document.getElementById('segunda1').innerText =  ''; 
+    document.getElementById('terceira1').innerText =  '';   
+    document.getElementById('quarta1').innerText =  '';   
+    document.getElementById('quinta1').innerText =  '';   
+    document.getElementById('sexta1').innerText =  '';   
+    document.getElementById('setima1').innerText =  ''; 
+
+    text.value = '';
+    selector.value = '';
+}
