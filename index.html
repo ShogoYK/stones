@@ -4,6 +4,7 @@
     <title>A small site for tones</title>
     <link rel="stylesheet" href="style.css" />
     <script src="./index.js"></script>
+    <script src="./tones.js"></script>
   </head>
   <body>
     <div class="header">
@@ -11,11 +12,21 @@
         <h1>Stones: A small site for tones</h1>
       </div>
     </div>
+    <div class="songName">
+      <label for="songInput">Song Name: </label>
+      <input type="text" class="songInput" />
+    </div>
     <div class=""></div>
     <div class="toneContainer">
       <div class="tone-selector">
         <label for="tone">Your Tone</label>
-        <select name="tone" id="toneSelector" onchange="showTone()">
+        <select
+          name="tone"
+          id="toneSelector"
+          onchange="showTone(this)"
+          required
+        >
+          <option value="" selected disabled hidden>-</option>
           <option value="A">A</option>
           <option value="A#">A#</option>
           <option value="B">B</option>
@@ -32,6 +43,54 @@
       </div>
       <div id="showTone"></div>
     </div>
-    <div id="chords"></div>
+    <div id="chords">
+      <table border="1">
+        <thead>
+          <tr>
+            <th id="base1"></th>
+            <th id="base1">Acorde</th>
+            <th id="base1-img">Imagem</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td id="segunda">Segunda:</td>
+            <td id="segunda1"></td>
+            <td id="segunda1-img"></td>
+          </tr>
+
+          <tr>
+            <td id="terceira">Terceira:</td>
+            <td id="terceira1"></td>
+            <td id="terceira1-img"></td>
+          </tr>
+
+          <tr>
+            <td id="quarta">Quarta</td>
+            <td id="quarta1"></td>
+            <td id="quarta1-img"></td>
+          </tr>
+
+          <tr>
+            <td id="quinta">Quinta:</td>
+            <td id="quinta1"></td>
+            <td id="quinta1-img"></td>
+          </tr>
+
+          <tr>
+            <td id="sexta">Sexta:</td>
+            <td id="sexta1"></td>
+            <td id="sexta1-img"></td>
+          </tr>
+
+          <tr>
+            <td id="setima">Setima:</td>
+            <td id="setima1"></td>
+            <td id="setima1-img"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
