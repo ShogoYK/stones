@@ -2,7 +2,7 @@
 
 <h1>Stones</h1>
 <br>
-A small site for tones (Only Major scale)
+A small site for tones (Major scale only in this one)
 <br>
 Quick and small project just for fun 
 <br>
